@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name usbkbd_vt100)(type KiCad)(uri "$(KIPRJMOD)/usbkbd_vt100.pretty")(options "")(descr ""))
+)

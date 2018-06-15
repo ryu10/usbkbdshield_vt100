@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ARDUINO_FOOTPRINT
+D Arduino Shield w/o ICSP - derived from freetronics library
+$ENDCMP
+#
+#End Doc Library
