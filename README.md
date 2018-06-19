@@ -94,7 +94,7 @@ Comment out/uncomment the `#define` lines as needed.
 1. Connect the USB keyboard to the USB connector on USB Host Shield.
 2. Connect the keyboard cable for VT100 to J1 header on USB Keyboard Shield for VT100.
 3. Connect the keyboard cable to the keyboard port on VT100 terminal.
-4. Stack and connect Arduino Uno, USB Host Shield for VT100, and USB Keyboard Shield, in this order, from the bottom to the top.
+4. Stack and connect Arduino Uno, USB Host Shield, and USB Keyboard Shield for VT100, in this order, from the bottom to the top.
 5. No external power supply is needed. The VT100 keyboard cable conveys the power.
 
 ![shieldstack_2_1.jpg](./images/shieldstack_2_1.jpg)
