@@ -4,7 +4,7 @@ __Rev. 2.1__
 
 ## About
 
-USB Keyboard Shield for VT100 connects a standard USB keyboard to a VT100 terminal.
+USB Keyboard Shield for VT100 connects a standard USB keyboard to Digital's VT100 terminal.
 
 Features:
 
