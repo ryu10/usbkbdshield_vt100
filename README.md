@@ -70,7 +70,7 @@ The pin connector is attached to J1 header on the USB Keyboard shield for VT100.
 
 It is recommended to program the Arduino before attaching the shields.
 
-1. Install [USB Host Shield Library 2.0](https://github.com/felis/USB_Host_Shield_2.0) into Arduino IDE.
+1. Install [USB Host Shield Library 2.0](https://github.com/felis/USB_Host_Shield_2.0) and [Timer1 Library](http://playground.arduino.cc/Code/Timer1) into Arduino IDE.
 
 2. Clone or download this project.
 
