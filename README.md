@@ -9,7 +9,7 @@ The USB Keyboard Shield for VT100 connects a standard USB keyboard to Digital's 
 Features:
 
 * All keys on the VT100 keyboard are mapped to the USB keyboard keys.
-* Six keyboard LEDs and the bell are implemented on the shield.
+* VT100 keyboard LEDs and bell are implemented on the shield.
 
 The Gerber file, BOM, schematic and Arduino sketch for the shield are included in the project folder. The steps to assemble, program and connect the shield are described in this document.
 
