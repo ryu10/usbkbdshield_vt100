@@ -39,7 +39,7 @@ The details of each step are described in the next few sections.
 The USB Keyboard Shield for VT100 can be assembled using the following info:
 
 - PCB Gerber File: [usbkbd_vt100_2_1_gerber.zip](./usbkbd_vt100_2_1_gerber.zip)
-- Schematic [usbkbd_vt100_sch.pdf](./usbkbd_vt100_sch.pdf)
+- Schematic: [usbkbd_vt100_sch.pdf](./usbkbd_vt100_sch.pdf)
 - BOM: [usbkbd_vt100_BOM_2_1.pdf](./usbkbd_vt100_BOM_2_1.pdf)
 
 ## Keyboard Cable
