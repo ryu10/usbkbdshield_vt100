@@ -1,40 +1,40 @@
-# USB Keyboard Shield for VT100 #
+# USB Keyboard Shield for VT100
 
 __Rev. 2.1__
 
 ## About
 
-The USB Keyboard Shield for VT100 connects a standard USB keyboard to Digital's VT100 terminal.
+This shield connects a standard USB keyboard to the DEC VT100 terminal.
 
-Features:
+### Features
 
 * All keys on the VT100 keyboard are mapped to the USB keyboard keys.
-* VT100 keyboard LEDs and bell are implemented on the shield.
+* VT100 keyboard LEDs and bell are emulated on the shield PCB.
 
-The Gerber file, BOM, schematic and Arduino sketch for the shield are included in the project folder. The steps to assemble, program and connect the shield are described in this document.
+The Gerber file, BOM, schematics and Arduino sketch for the shield are included in this repo. For the steps to assemble, program and connect the shields, please see the sections below.
 
-This shield requires the USB Host Shield by Circuits@Home.
+__Note:__ this shield uses the USB Host Shield from Circuits@Home.
 
-Please use the information in this project at your own risk. No warranty or guarantee is provided.
+Please use the information in this repo at your own risk. No warranty or guarantee is provided.
 
 ## Required Components
 
-- USB Keyboard Shield for VT100 (the shield from this project)
+- USB Keyboard Shield for VT100 (the shield from this repo)
 - [USB Host Shield by Circuits@Home](https://www.circuitsathome.com/arduino_usb_host_shield_projects/), the "full-sized board"
 - Arduino Uno
 - Keyboard cable for VT100 (see "Keyboard Cable" below)
 - USB Keyboard
 
-## Required Steps
+## Steps
 
 1. Assemble the shield
-2. Make a keyboard cable
+2. Build a keyboard cable
 3. Program the Arduino
 4. Connect the shields and cables
 
 The details of each step are described in the next few sections.
 
-## Shield Assembly
+## Assemble the Shield
 
 The USB Keyboard Shield for VT100 can be assembled using the following info:
 
@@ -42,14 +42,14 @@ The USB Keyboard Shield for VT100 can be assembled using the following info:
 - Schematic: [usbkbd_vt100_sch.pdf](./usbkbd_vt100_sch.pdf)
 - BOM: [usbkbd_vt100_BOM_2_1.pdf](./usbkbd_vt100_BOM_2_1.pdf)
 
-## Keyboard Cable
+## Build the Keyboard Cable
 
 To make the keyboard cable, connect these components:
 
  - 1/4 inch stereo plug/cable
  - 5-pin header connector
 
-__PIN CONNECTION__
+__PIN CONNECTIONS__
 
 | Pin | Plug |  Value |
 |-|-|-|
@@ -67,7 +67,7 @@ The pin connector is attached to J1 header on the USB Keyboard shield for VT100.
 
 ![usbkeyboardshieldCable_2_1.jpg](./images/usbkeyboardshieldCable_2_1.jpg)
 
-## Programming Arduino Uno
+## Program the Arduino Uno
 
 It is recommended to program the Arduino Uno before attaching the shields.
 
@@ -90,17 +90,17 @@ There are two options in `usbkeyboardvt100.ino`:
 
 Comment out/uncomment the `#define` lines as needed.
 
-## Connecting the Shields and Cables
+## Connect the Shields and Cables
 
 1. Connect the USB keyboard to the USB connector on the USB Host Shield.
-2. Connect the keyboard cable for VT100 to J1 header on the USB Keyboard Shield for VT100.
+2. Connect the keyboard cable for VT100 to the J1 header on the USB Keyboard Shield.
 3. Connect the keyboard cable to the keyboard port on VT100 terminal.
-4. Stack and connect the Arduino Uno, the USB Host Shield, and the USB Keyboard Shield for VT100, in this order, from the bottom to the top.
-5. No external power supply is needed. The power is supplied by the VT100 terminal via the keyboard cable.
+4. Stack and connect the Arduino Uno, the USB Host Shield, and the USB Keyboard Shield, in this order, from the bottom to the top (see the iamge below).
+5. No external power supply is needed. The power is supplied via the VT100 keyboard cable.
 
 ![shieldstack_2_1.jpg](./images/shieldstack_2_1.jpg)
 
-## Key Mapping
+## Key Mappings
 
 Some hard-to-guess keys:
 
@@ -113,26 +113,25 @@ Some hard-to-guess keys:
 | LINE FEED | End |
 | NO SCROLL | Scroll Lock |
 | PF1 | Num Lock, F9 |
-| PF2 | (pad) /, F10 |
-| PF3 | (pad) *, F11 |
+| PF2 | (numpad) /, F10 |
+| PF3 | (numpad) *, F11 |
 | PF4 | Page Up, F12 |
-|(pad) , | (pad) + |
+|(numpad) , | (numpad) + |
 
-The key mapping is defined in `usb_key_tbl[]` in `usbkeyboardvt100.h`. Also see "Configuration Options" above.
+The key mappings are defined in `usb_key_tbl[]` in `usbkeyboardvt100.h`. Also see "Configuration Options" above.
 
 ## Reference Configuration
 
-The following configuration was used during development of the shield:
+The following configuration was used during development of this shield:
 
 - USB Host Shield 2.0
 - Arduino Uno R3
-- VT100-WA
-- USB Keyboards: HP K1500 and Logitech K310
+- VT100-WA / VT-180
+- USB Keyboards: HP K1500 / Logitech K310
 
 ## Known Issues
 
-1. When the VT100 terminal is turned off, a short beep may be generated on the shield.
-2. Keyboard connected via a USB hub is not supported.
+1. Keyboard connected via a USB hub is not supported.
 
 ## GPL
 
